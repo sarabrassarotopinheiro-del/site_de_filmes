@@ -1,1 +1,30 @@
+header {
+    /*overflow: hidden;*/
+    background-color: #757373;
+    padding: 20px 10px;
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
 
+body {
+    overflow: hidden;
+    background-color: #4a4a4a;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionFotos {
+  padding: 30px 30px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.fotosAbertura {
+  justify-content: center;
+  block-size: 50pt;
+
+}

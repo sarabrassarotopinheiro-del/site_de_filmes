@@ -1,6 +1,6 @@
 header {
     /*overflow: hidden;*/
-    background-color: #757373;
+    background-color: #bb2a2a;
     padding: 20px 10px;
     /*display: flex;*/
     justify-content: space-between;
@@ -10,26 +10,54 @@ header {
 
 body {
     overflow: hidden;
-    background-color: #4a4a4a;
+    background-color: #3b418a;
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sectionFotos {
-  padding: 30px 30px;
-  justify-content: center;
-  display: inline-block;
-}
-
-.fotosAbertura {
-  justify-content: center;
-  block-size: 50pt;
+.conteiner-pai { 
+display: flex;
+width: 100vw;
+ 
+height: calc(100vh-80px);
 
 }
 
-div{
-border: .2cm solid rgb(255,0,0) ;
+.caixa-preta { 
+ flex: 1;
+ background-color: #3b418a;
+ color: azure;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 40px;
+}
+
+.conteudo-texto p {
+font-size: 20px;
+line-height: 1.6;
+text-align: center;
+margin: 10px 0;
 
 }
+
+.caixa-azul {
+    flex: 1;               
+    background-color: #c8a2c8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.caixa-azul img {
+    max-width: 100%;       
+    max-height: 70vh;      
+    object-fit: contain;  
+    border-radius: 12px;  
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+

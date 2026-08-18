@@ -1,63 +1,68 @@
 header {
-    /*overflow: hidden;*/
     background-color: #bb2a2a;
-    padding: 20px 10px;
-    /*display: flex;*/
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-}
-
-body {
-    overflow: hidden;
-    background-color: #3b418a;
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: rgb(0, 0, 0);
+    height: 80px; 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #3b418a;
+    
 }
 
 .conteiner-pai { 
-display: flex;
-width: 100vw;
- 
-height: calc(100vh-80px);
-
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 80px); 
 }
 
 .caixa-preta { 
- flex: 1;
- background-color: #3b418a;
- color: azure;
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 40px;
-}
-
-.conteudo-texto p {
-font-size: 20px;
-line-height: 1.6;
-text-align: center;
-margin: 10px 0;
-
-}
-
-.caixa-azul {
-    flex: 1;               
-    background-color: #c8a2c8; 
+    flex: 1;
+    background-color: #3b418a;
+    color: rgb(35, 131, 131);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
 }
 
-.caixa-azul img {
-    max-width: 100%;       
-    max-height: 70vh;      
-    object-fit: contain;  
-    border-radius: 12px;  
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+.conteudo-texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
 }
 
+.caixa-azul {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    background-color: #b42222; 
+    height: 100%; 
+}
 
+.caixa-azul img {
+    width: 400px;           
+    height: auto;          
+    margin: 15px 0;        
+    border-radius: 8px;  
+}
+
+.caixa-azul img:not(.moana) {
+    align-self: center;             
+    margin-bottom: 30px;            
+}
+
+.moana {
+    order: 1;                       
+    align-self: flex-end;           
+    margin-right: 40px;            
+    margin-top: 0px !important;     
+}
